@@ -39,4 +39,3 @@ const sr = ScrollReveal({
 sr.reveal('.brand',{delay: 100}); 
 sr.reveal('.nav_buttons',{delay: 100}); 
 sr.reveal('.body_container',{delay: 100}); 
-
