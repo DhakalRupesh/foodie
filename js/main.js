@@ -18,3 +18,11 @@ function visitDinner() {
     window.location.href = "pages/dinner.html";
 }
 
+function openFood(foodName) {
+    var i;
+    var x = document.getElementsByClassName("food_tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    document.getElementById(foodName).style.display = "block"; 
+}

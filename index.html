@@ -16,15 +16,15 @@
                     <h3>Foodie</h3>
                 </div>
                 <div class="nav_buttons">
-                    <div onclick="visitBreakfast()" class="nav_button">
+                    <div onclick="openFood('Breakfast')" class="nav_button">
                         <img src="images/breakfasticon.png" alt="food_image">
                         <h4>Breakfast</h4>
                     </div>
-                    <div onclick="visitLunch()" class="nav_button">
+                    <div onclick="openFood('Lunch')" class="nav_button">
                         <img src="images/lunchicon.png" alt="food_image">
                         <h4>Lunch</h4>
                     </div>
-                    <div onclick="visitDinner()" class="nav_button">
+                    <div onclick="openFood('Dinner')" class="nav_button">
                         <img src="images/dinnericon.png" alt="food_image">
                         <h4>Dinner</h4>
                     </div>
@@ -33,21 +33,171 @@
         </header>
 
         <section id="body_c" class="body_container">
-            <div class="food_items">
-                <div class="food_image"></div>
-                <div class="food_info">
-                    <h1>Pancakes</h1>
-                    <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
-                        soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
-                        sugar, these babies hold a special place in our nostalgic hearts!</p>
-                        <ul>
-                            <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
-                            <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
-                        </ul>
+            <div id="Breakfast" class="food_tab">
+                <div class="food_items">
+                    <img class="food_image" src="images/breakfast.png" alt="">
+                    <div class="food_info">
+                        <h1>Pancakes</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
                 </div>
-                <div class="food_price">
-                    <p>Price</p>
-                    <h1>Rs.150.00</h1>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/AlooParatha.jpg" alt="">
+                    <div class="food_info">
+                        <h1>Paratha</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/aloochana.jpg" alt="">
+                    <div class="food_info">
+                        <h1>Aloo Chana</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Lunch" class="food_tab">
+                <div class="food_items">
+                    <img class="food_image" src="images/lunch.png" alt="">
+                    <div class="food_info">
+                        <h1>Salad</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/momo.jpg" alt="">
+                    <div class="food_info">
+                        <h1>MoMo</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/burrito.jpeg" alt="">
+                    <div class="food_info">
+                        <h1>Burrito</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Dinner" class="food_tab">
+                <div class="food_items">
+                    <img class="food_image" src="images/dinner.png" alt="">
+                    <div class="food_info">
+                        <h1>Whole Chicken</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/dalbhat.jpg" alt="">
+                    <div class="food_info">
+                        <h1>Dal Bhat</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
+                </div>
+    
+                <div class="food_items">
+                    <img class="food_image" src="images/SpaghettiEgg.jpg" alt="">
+                    <div class="food_info">
+                        <h1>Spaghetti Egg</h1>
+                        <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                            soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                            sugar, these babies hold a special place in our nostalgic hearts!</p>
+                            <ul>
+                                <li> <img src="assets/timeicon.png" alt=""> 15 mins</li>
+                                <li> <img src="assets/hoticon.png" alt=""> 5 serves</li>
+                            </ul>
+                    </div>
+                    <div class="food_price">
+                        <p>Price</p>
+                        <h1>Rs.150.00</h1>
+                    </div>
                 </div>
             </div>
         </section>
