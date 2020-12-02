@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/fc26e3e69e.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header>
+            <div class="nav">
+                <div class="brand">
+                    <img src="images/icon.png" alt="page logo">
+                    <h3>Foodie</h3>
+                </div>
+                <div class="nav_buttons">
+                    <div onclick="visitBreakfast()" class="nav_button">
+                        <img src="images/breakfasticon.png" alt="food_image">
+                        <h4>Breakfast</h4>
+                    </div>
+                    <div onclick="visitLunch()" class="nav_button">
+                        <img src="images/lunchicon.png" alt="food_image">
+                        <h4>Lunch</h4>
+                    </div>
+                    <div onclick="visitDinner()" class="nav_button">
+                        <img src="images/dinnericon.png" alt="food_image">
+                        <h4>Dinner</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="body_c" class="body_container">
+            <div class="food_items">
+                <div class="food_image"></div>
+                <div class="food_info">
+                    <h1>Pancakes</h1>
+                    <p>Favourite childhood breakfast food? Pancakes have our vote, hands down. Stacked up and 
+                        soaked with coat of maple syrup, or topped with a squeeze of lemon and a teaspoon of raw 
+                        sugar, these babies hold a special place in our nostalgic hearts!</p>
+                        <ul>
+                            <li>15 mins</li>
+                            <li>5 serves</li>
+                        </ul>
+                </div>
+                <div class="food_price">
+                    <p>Price</p>
+                    <h1>Rs.150.00</h1>
+                    <i class="fab fa-accessible-icon"></i>
+                </div>
+            </div>
+        </section>
+        <!-- js links -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

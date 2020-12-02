@@ -1,0 +1,170 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F4F4F4;
+}
+h1,h2,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* color */
+:root{
+    --white: #ffffff;
+    --black: #2C2C2C;
+    --pgrey: #8B8B8B;
+    --red: #EF5350;
+    --dred: #D32F2F;
+  }
+
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03); 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--red); 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--dred); 
+}
+
+/* navbar section */
+.nav{
+    height: 311px;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0px 12px 24px 10px rgba(0, 0, 0, 0.03);
+}
+
+/* navbar brand */
+    .nav .brand {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 0 40px 0;
+    }
+    .nav .brand img {
+        width: 32px;
+        height: 32px;
+    }
+    .nav .brand h3 {
+        color: var(--red);
+        padding: 0 0 0 8px;
+    }
+
+ /* navbar buttons */
+    .nav .nav_buttons {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .nav .nav_buttons .nav_button {
+        padding: 30px 60px 30px 60px;
+        margin: 32px;   
+        border-radius: 12px;
+        background-color: #f4f4f4;
+        cursor: pointer;
+    }
+    .nav .nav_buttons .nav_button img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 25px;
+        /* border-radius: 100px; */
+    }
+    .nav .nav_buttons .nav_button h4{
+        color: var(--black);
+        text-align: center;
+    }
+
+/* body */
+
+.body_container{
+    width: 80%;
+    height: 527px;
+    padding: 50px;
+    margin: 30px auto;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: auto;
+    color: var(--black);
+}
+.body_container .food_items{
+    width: 100%;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+}
+.body_container .food_items p {
+    color: var(--pgrey) !important;
+}
+.body_container .food_items .food_image {
+    background-image: url("../images/breakfast.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    height: 165px;
+    width: 20%;
+}
+.body_container .food_items .food_info{
+    width: 60%;
+    padding: 40px;
+}
+.body_container .food_items .food_info p{
+    width: 75%;
+    text-align: left;
+    padding: 20px 0 0 0;
+}
+.body_container .food_items .food_info ul li{
+    color: var(--pgrey);
+    display: inline;
+    /* padding: 10px 0 0 0; */
+}
+.body_container .food_items .food_price{
+    width: 20%;
+    height: 165px;
+    text-align: right;
+}
+
